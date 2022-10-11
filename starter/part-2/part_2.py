@@ -1,29 +1,29 @@
 ### Step 1 - Lists ###
 
 # Fill in this list with several authors you are a fan of. At least 7 or 8 should do.
-my_authors = []
+my_authors = ['Hunter S Thompson', 'Jocko Wilink', 'Gunner Andri', 'Jk Rawling', 'Mike Tyson', 'Alex Ovechkin', 'Connor McDavid', 'Kirill Kaprizov']
 
 # Now let's add a new author to the end with the .append() method. Type your code below.
 
-# Code here
+my_authors.append('Jesse Puljujarvi')
 # Example: my_authors.append("H.G. Wells")
 
 
 # Now let's remove an element in the list
 
-# Code here
+my_authors.remove('Jk Rawling')
 # Example: my_authors.remove("H.G. Wells")
 
 
 # Now access an element by it's index. (Remember it indexes start at 0.)
 
-# Code here
+my_authors[5]
 # Example: my_authors[2]
 
 
 # Now slice the list.
 
-# Code here
+my_authors[2:7]
 # Example: my_authors[1:4]
 
 
@@ -31,7 +31,7 @@ my_authors = []
 
 # Create your tuple below. Assign it to a variable name you can reference later in the exercise.
 
-# Code here
+my_author_tuple = ('Ray Lewis', 'Leon Drisaitl', 'Cale Makar', 'Evegeny Kuznetsov', 'Tom Wilson')
 # Example: my_author_tuple = ("F. Scott Fitzgerald", "J.K. Rowling", "Ernest Hemingway", "Emily Dickenson", "George Orwell", "Ray Bradbury")
 
 
@@ -39,22 +39,22 @@ my_authors = []
 
 # Create a set with your authors.
 
-# Code here
+my_author_set = {'Ray Lewis', 'Leon Drisaitl', 'Cale Makar', 'Evegeny Kuznetsov', 'Tom Wilson'}
 # Example: my_author_set = {"F. Scott Fitzgerald", "J.K. Rowling", "Ernest Hemingway", "Emily Dickenson", "George Orwell", "Ray Bradbury"}
 
 
 # Add a new author to your set.
 
-# Code here
+my_author_set.add('Nathan Mckinnon')
 # Example: my_author_set.add("J.R.R. Tolkien")
 
 
 # Try adding the same author again, and be sure to print your set.
 
-# Code here
+my_author_set.add('Nathan Mckinnon')
 # Example: my_author_set.add("J.R.R. Tolkien")
 
-
+print(my_author_set)
 
 ### Step 4 - For Loops ###
 
