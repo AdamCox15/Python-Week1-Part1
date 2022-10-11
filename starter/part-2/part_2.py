@@ -62,7 +62,14 @@ print(my_author_set)
 
 # Code here
 # Example:
+for authors in my_author_set:
+    print(authors)
 
+for authors in my_author_tuple:
+    print(authors)
+
+for authors in my_authors:
+    print(authors)
 # for book in my_authors:
     # print(book)
 
