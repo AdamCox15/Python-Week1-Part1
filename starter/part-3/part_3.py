@@ -10,7 +10,11 @@ my_book = {
 
 # Code below
 
-
+def book_breakdown(book):
+    book_str= f"{book['title']} was written by {book['author']} in {book['year']}. It has a rating of {book['rating']} and {book['pages']} pages."
+    print(book_str)
+    
+book_breakdown(my_book)
 
 
 # Once you are finished with that function, create several more functions which return individual pieces of information from the book.
