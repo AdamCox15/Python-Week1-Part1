@@ -1,5 +1,5 @@
 my_book = {
-    "title": "Then Hunger Games",
+    "title": "The Hunger Games",
     "author": "Suzanne Collins",
     "year": 2008,
     "rating": 4.32,
