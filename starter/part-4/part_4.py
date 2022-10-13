@@ -4,6 +4,25 @@
 
 # Code here
 
+def create_new_book():
+   title = input("What is the title of the book you would like to add? ")
+   author = input("Who is the author of the book you would like to add? ")
+   year = input("What year was this book published? ")
+   rating = input("What rating out of 5 would you give this book? ")
+   pages = input("What is the page count of the book? ")
+   
+   book_dictionary = {
+       "title": title,
+       "author": author,
+       "year": year,
+       "rating": rating,
+       "pages": pages
+   }
+   
+   return book_dictionary
+
+print(create_new_book())
+
 
 ### Step 2 - Type conversion
 
