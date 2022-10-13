@@ -144,3 +144,52 @@ home_page()
 
 # Code here
 
+my_books = [
+    {
+        "title": "Fear and Loathing in Las Vegas",
+        "author": "Hunter S Thompson",
+        "year": 1997,
+        "rating": 4.8,
+        "pages": 345
+    },
+    {
+        "title": "The B.F.G",
+        "author": "That one Guy",
+        "year": 2001,
+        "rating": 4.1,
+        "pages": 498
+    },
+    {
+        "title": "Married with Children",
+        "author": "Al Bundy",
+        "year": 2007,
+        "rating": 4.4,
+        "pages": 398
+    },
+    {
+        "title": "Edmonton Oilers",
+        "author": "Connor McDavid",
+        "year": 2022,
+        "rating": 4.5,
+        "pages": 421
+    }
+]
+
+def see_books():
+    for books in my_books:
+        print(books)
+
+def home_page():
+    quit = True
+    while quit == True:
+     in_select = int(input("To add a book type 1. To view all the books type 2. To quit type 3. "))
+     if in_select == 1:
+        create_new_book()
+     elif in_select == 2:
+        see_books()
+     elif in_select == 3:
+        quit = False
+     else:
+        print('please select an option from the menu')
+
+home_page()
