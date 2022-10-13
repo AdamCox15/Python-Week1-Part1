@@ -55,22 +55,36 @@ def create_new_books():
 ## Now take your previous function, and handle potential errors should the user type an answer that doesn't convert data-type properly.
 
 # Code here
-
-try: 
-    year = int(input("What year was this book published? "))
-except:
+def create_new_book():
+   title = input("What is the title of the book you would like to add? ")
+   author = input("Who is the author of the book you would like to add? ")
+   try: 
+     year = int(input("What year was this book published? "))
+   except:
     year = int(input("Please type a number for the year? "))
-
-try: 
+   try: 
     rating = float(input("What rating out of 5 would you give this book? "))
-except:
+   except:
     rating = float(input("Please type a number or float number like 4.5 for the rating? "))
-
-try:
+   try:
     pages = int(input("What is the page count pof the book? "))
-except:
+   except:
     pages = int(input("Please type a number for the number of pages? "))
 
+   
+   book_dictionary = {
+       "title": title,
+       "author": author,
+       "year": year,
+       "rating": rating,
+       "pages": pages
+   }
+#    print(type(year))
+#    print(type(rating))
+#    print(type(pages))
+   my_books.append(book_dictionary)
+   print(book_dictionary)
+   home_page()
 
 
 ### Step 4 - if/elif/else
@@ -78,7 +92,51 @@ except:
 ## Now create a main menu function that gives the user options. Handle their choices with if/elif/else statements.
 
 # Code here
+my_books = [
+    {
+        "title": "Fear and Loathing in Las Vegas",
+        "author": "Hunter S Thompson",
+        "year": 1997,
+        "rating": 4.8,
+        "pages": 345
+    },
+    {
+        "title": "The B.F.G",
+        "author": "That one Guy",
+        "year": 2001,
+        "rating": 4.1,
+        "pages": 498
+    },
+    {
+        "title": "Married with Children",
+        "author": "Al Bundy",
+        "year": 2007,
+        "rating": 4.4,
+        "pages": 398
+    },
+    {
+        "title": "Edmonton Oilers",
+        "author": "Connor McDavid",
+        "year": 2022,
+        "rating": 4.5,
+        "pages": 421
+    }
+]
 
+def see_books():
+    for books in my_books:
+        print(books)
+
+def home_page():
+    in_select = int(input("To add a book type 1. To view all the books type 2.  "))
+    if in_select == 1:
+        create_new_book()
+    elif in_select == 2:
+        see_books()
+    else:
+        print('please select an option from the menu')
+
+home_page()
 
 ### Step 5 - while loops
 
