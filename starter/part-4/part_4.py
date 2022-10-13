@@ -56,6 +56,21 @@ def create_new_books():
 
 # Code here
 
+try: 
+    year = int(input("What year was this book published? "))
+except:
+    year = int(input("Please type a number for the year? "))
+
+try: 
+    rating = float(input("What rating out of 5 would you give this book? "))
+except:
+    rating = float(input("Please type a number or float number like 4.5 for the rating? "))
+
+try:
+    pages = int(input("What is the page count pof the book? "))
+except:
+    pages = int(input("Please type a number for the number of pages? "))
+
 
 
 ### Step 4 - if/elif/else
