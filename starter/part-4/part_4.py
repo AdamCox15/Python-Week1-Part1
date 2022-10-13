@@ -30,6 +30,24 @@ print(create_new_book())
 
 # Code here
 
+def create_new_books():
+   title = input("What is the title of the book you would like to add? ")
+   author = input("Who is the author of the book you would like to add? ")
+   year = int(input("What year was this book published? "))
+   rating = float(input("What rating out of 5 would you give this book? "))
+   pages = int(input("What is the page count of the book? "))
+   
+   book_dictionary = {
+       "title": title,
+       "author": author,
+       "year": year,
+       "rating": rating,
+       "pages": pages
+   }
+   
+   return book_dictionary
+
+
 
 
 ### Step 3 - Error handling
