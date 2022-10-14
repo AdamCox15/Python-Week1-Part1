@@ -66,7 +66,7 @@ def see_books(book_source):
 def home_page():
     quit = True
     while quit == True:
-        in_select = int(input("to add a book type 1. to view all book type 2. To quit type 3. To find total number of pages type 4. To see the average rating type 5."))
+        in_select = int(input("to add a book type 1. to view all book type 2. To quit type 3. To find total number of pages type 4. To see the average rating type 5. To see the average pages type 6. To see a list of authors books type 7."))
         if in_select == 1:
             add_book()
         elif in_select == 2:
@@ -79,6 +79,8 @@ def home_page():
             avg_rtng()
         elif in_select == 6:
             avg_pages()
+        elif in_select == 7:
+            author_list(input("Type authors name"))
         else:
             print('please select an option from the menu') 
 
@@ -115,6 +117,16 @@ def avg_pages():
             count = count + 1
         print(total/count)
 
+def author_list(author_name):
+    print(author_name)
+    resp_list =[]
+    with open('library.txt', 'r') as f:
+        for line in f:
+            my_list = line.split(', ')
+            if my_list[1] == author_name:
+                print(my_list[1])
+                resp_list.append(my_list[0])
+        print(resp_list)
 
 
 
